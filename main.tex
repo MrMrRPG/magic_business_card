@@ -1,0 +1,73 @@
+\documentclass[11pt,a4paper]{memoir}
+
+\setstocksize{55mm}{85mm} % UK Stock size
+\setpagecc{55mm}{85mm}{*}
+\settypeblocksize{45mm}{75mm}{*}
+\setulmargins{10mm}{*}{*}
+\setlrmargins{5mm}{*}{*}
+% \topmargin=5mm
+\usepackage{xcolor}
+
+\setheadfoot{0.1pt}{0.1pt}
+\setheaderspaces{1pt}{*}{*}
+\usepackage{fontspec}
+\setmainfont[]{EBGaramond12-Regular.ttf} 
+
+\checkandfixthelayout[fixed]
+
+\pagestyle{empty}
+
+\usepackage{pstricks}
+\usepackage{auto-pst-pdf,pst-barcode}
+
+\begin{document}
+    \begin{Spacing}{.75}%
+    \noindent
+    \begin{centering}
+        \Huge{\textsc{Joshua Ng}} \vspace{-1.5mm} \\
+    \end{centering}
+    % \tiny Magician \hfill\\ %{\color{gray}Division / Employer}\\ 
+    % \vspace{-5mm}
+    % \rule{74mm}{.3mm}\\
+%     \begin{minipage}[t]{33mm}
+%         \vspace{3mm}%
+%         \begin{pspicture}(25mm,25mm)
+%             % The MECARD format is used to exchange contact information. More information at:
+%             % http://www.nttdocomo.co.jp/english/service/imode/make/content/barcode/function/application/addressbook/index.html
+% \psbarcode{MECARD:N:Last name, First Name;URL:https://fqdn;EMAIL:helena@univ.edu;NOTE:GPG: ;;}{eclevel=L width=1 height=1}{qrcode}
+
+%         \end{pspicture}
+%     \end{minipage}
+    % \hspace{1mm}
+        \vspace{5mm}%
+        \begin{centering}
+        {\scriptsize
+            \begin{Spacing}{1}%
+            \textbf{\large{Magician \& Mentalist}} \vspace{1mm}\\
+            Private Events $\cdot$ Cooperate Events $\cdot$ Venue Residency\vspace{2mm}\\
+                % \hspace{5mm}Cooperate Events\\
+                % \hspace{5mm}Venue Residency\vspace{2mm}\\
+            \end{Spacing}
+        }
+        \end{centering}
+        
+        \vspace{5mm}
+        
+        \begin{minipage}[t]{42mm}
+        \begin{flushleft}
+        {\tiny
+        	\begin{tabular}{rl}
+            	{\color{gray}social media} & @joshn\_magic\\
+            % 	{\color{gray}tiktok} & @joshn\_magic\\
+            	{\color{gray}email} & joshnmagic@gmail.com\\
+            % 	{\color{gray}email} & hxr42@gmail.com\\
+            	{\color{gray}mobile} & +1 (831) 707 4921\\
+            \end{tabular}
+            \vspace*{2mm}
+        }
+        \end{flushleft}
+    \end{minipage}
+    \rule{74mm}{0mm}\\
+    % \texttt{\fontsize{2.84mm}{3.55mm}\selectfont 425B 030A B8D2 0316 CA1B 4709 CA83 5DDA EC31 CA56} % GPG KEY ID
+    \end{Spacing}
+\end{document}
